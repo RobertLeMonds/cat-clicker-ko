@@ -10,6 +10,12 @@ var ViewModel = function(){
 
 		var count = 0;
 		count++;
+
+		if (this.clickCount() == 10) {
+			return this.level('Teen');
+		} else if (this.clickCount() == 20) {
+			return this.level('Big Boy');
+		}
 	};
 }
 
